@@ -15,5 +15,11 @@ let currentIndex = 0
 buttonEl.addEventListener("click", () => {
     currentIndex += 1
 
-    imageEl.src = images[currentIndex]
+    const lastIndex = images.length - 1
+    if(currentIndex === lastIndex) {
+        currentIndex = 0
+        images.src = images[currentIndex]
+    } else {
+        imageEl.src = images[currentIndex]
+    }
 })
