@@ -1,0 +1,16 @@
+#img-el {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out; /* The magic happens here */
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0 !important;
+}
+
+body {
+    width: 0;
+    height: 0;
+}
