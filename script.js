@@ -4,6 +4,7 @@ const images = [
     "./images/square3.jpg",
     "./images/square4.jpg",
     "./images/square5.jpg",
+    "./images/square6.jpg",
     "./images/square6.jpg"
 ]
 
@@ -27,8 +28,13 @@ buttonEl.addEventListener("click", () => {
 
 })
 
-// previousButton.addEventListener("click", () => {
-//     currentIndex -= 1
+previousButton.addEventListener("click", () => {
+    currentIndex -= 1
 
-//     imageEl.src = images[currentIndex]
-// })
+    const firstIndex = 0
+    if(currentIndex !== firstIndex) {
+        imageEl.src = images[currentIndex]
+    } else {
+        currentIndex = 0
+    }
+})
