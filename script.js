@@ -9,17 +9,26 @@ const images = [
 
 const imageEl = document.getElementById("img-el")
 const buttonEl = document.getElementById("button-el")
-const previousEl = document.getElementById("previous-el")
+const previousButton = document.getElementById("back-el")
 let currentIndex = 0
+
 
 buttonEl.addEventListener("click", () => {
     currentIndex += 1
+    console.log(currentIndex)
 
     const lastIndex = images.length - 1
-    if(currentIndex === lastIndex) {
-        currentIndex = 0
-        images.src = images[currentIndex]
+    if(currentIndex !== lastIndex) {
+        imageEl.src = images[currentIndex]
     } else {
+        currentIndex = 0
         imageEl.src = images[currentIndex]
     }
+
 })
+
+// previousButton.addEventListener("click", () => {
+//     currentIndex -= 1
+
+//     imageEl.src = images[currentIndex]
+// })
