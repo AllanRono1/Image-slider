@@ -31,10 +31,11 @@ buttonEl.addEventListener("click", () => {
 previousButton.addEventListener("click", () => {
     currentIndex -= 1
 
-    const firstIndex = 0
-    if(currentIndex !== firstIndex) {
-        imageEl.src = images[currentIndex]
+    if(currentIndex > 0) {
+    imageEl.src = images[currentIndex]
+    console.log(currentIndex)
     } else {
         currentIndex = 0
+        imageEl.src = images[currentIndex]
     }
 })
