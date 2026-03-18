@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
+    <link href="style.css" rel="stylesheet"/>
     <script src="script.js" defer></script>
 </head>
 <body>
-<img id="img-el" src="./images/square1.jpg"></img>
-<button id="button-el">Next</button>
-<button id="back-el">Back</button>
+<main>
+<div class="image-container">
+    <img id="img-el" src="./images/square1.jpg"></img>
+</div>
+<div class="button-container">
+    <button class="direction" id="back-el">⏮</button>
+    <button class="direction" id="button-el">⏭</button>
+</div>
+</main>
 </body>
 </html>
