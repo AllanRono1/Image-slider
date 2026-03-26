@@ -45,4 +45,22 @@ body {
   font-family: "Cinzel", serif;
   font-weight: 600;
   font-size: 3.5rem;
+  max-width: 45%
+}
+
+p {
+   font-family: "Datatype", monospace;
+   font-size: 1rem;
+   letter-spacing: 3%;
+}
+
+.dimensions-container {
+  max-width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+.paragraph-container {
+  max-width: 30%;
 }
