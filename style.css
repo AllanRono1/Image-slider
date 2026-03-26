@@ -17,11 +17,13 @@ body {
   gap: 300px;
 }
 
-.image-container{ 
-  width: 400px;
+.image-container{
+  position: absolute;
+  right: 50px;
+  width: 430px;
   height: 400px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .img-container > img {
@@ -45,7 +47,9 @@ body {
   font-family: "Cinzel", serif;
   font-weight: 600;
   font-size: 3.5rem;
-  max-width: 45%
+  max-width: 45%;
+  letter-spacing: 2%;
+  position: relative;
 }
 
 p {
